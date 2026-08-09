@@ -4,163 +4,392 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Raghunath Panda - CSE(AI/ML) student at KIIT | Building practical AI/ML applications" />
+  <meta name="description" content="Raghunath Panda - AI/ML Developer & CSE(AI/ML) student at KIIT. Building practical AI/ML applications." />
   <meta name="author" content="Raghunath Panda" />
-  <meta name="google-site-verification" content="your-google-verification-code" />
-  <title>Raghunath Panda | AI/ML Developer</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss@3.4.1/dist/tailwind.min.js"></script>
+  <title>Raghunath Panda | $ whoami</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --border: #30363d;
+      --cyan: #6A5ACD;
+      --pink: #ff69b4;
+      --green: #4ade80;
+      --text: #c9d1d9;
+      --muted: #8b949e;
     }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Fira Code', 'Share Tech Mono', monospace;
+      line-height: 1.5;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { color: var(--cyan); }
     .gradient-text {
-      background: linear-gradient(135deg, #6a5acd 0%, #ff69b4 50%, #4facfe 100%);
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--pink) 50%, #4facfe 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .glass-effect {
-      background: rgba(13, 17, 23, 0.7);
-      backdrop-filter: blur(10px);
+
+    /* Terminal glow */
+    .terminal {
+      position: relative;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 0 20px rgba(106, 90, 205, 0.15);
     }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    .terminal::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      box-shadow: inset 0 0 0 2000px var(--panel);
+      pointer-events: none;
     }
-    .float { animation: float 3s ease-in-out infinite; }
+
+    /* Typing prompt */
+    .prompt { color: var(--green); }
+    .prompt::after { content: "▐"; animation: blink 1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    nav { border-bottom: 1px solid var(--border); }
+    .nav-links a { color: var(--text); }
+    .nav-links a:hover { color: var(--cyan); }
+
+    section { padding: 4rem 1.5rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    h1, h2 { font-weight: 700; }
+    .section-title {
+      position: relative;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: -6px; left: 0; width: 40px; height: 2px;
+      background: var(--cyan);
+      border-radius: 2px;
+    }
+
+    /* Hero */
+    .hero { text-align: center; padding-top: 6rem; }
+    .hero-avatar {
+      width: 140px; height: 140px; margin: 0 auto 1.5rem;
+      border: 2px solid var(--cyan);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem; font-weight: 700;
+      color: var(--cyan);
+    }
+
+    .typing-line {
+      font-family: 'Share Tech Mono', monospace;
+      color: var(--cyan);
+      font-size: 1.15rem;
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    /* Stats table */
+    .stats-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .stats-table td, .stats-table th { padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); }
+    .stats-table td:first-child { color: var(--muted); }
+    .stats-table td:last-child { color: var(--cyan); font-weight: 600; }
+
+    /* Tech icons grid */
+    .tech-grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 0.8rem; margin-top: 1.5rem; justify-items: center; }
+    .tech-grid img { height: 40px; filter: grayscale(85%) opacity(0.85); transition: all 0.2s; }
+    .tech-grid img:hover { filter: none; opacity: 1; transform: scale(1.15); }
+
+    /* Project cards */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+    .project {
+      background: var(--panel); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1.5rem; transition: all 0.2s;
+    }
+    .project:hover { border-color: var(--cyan); box-shadow: 0 0 15px rgba(106,90,205,0.2); }
+    .project h3 { color: var(--cyan); margin-bottom: 0.4rem; }
+    .project .desc { color: var(--muted); font-size: 0.85rem; margin-bottom: 1rem; }
+    .project a { font-size: 0.8rem; }
+
+    /* Collapsible panels */
+    .panel { margin: 1rem 0; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+    .panel summary {
+      cursor: pointer; padding: 0.7rem 1rem;
+      background: rgba(106, 90, 205, 0.08);
+      color: var(--cyan); font-weight: 600;
+      user-select: none;
+    }
+    .panel[open] summary { background: rgba(106, 90, 205, 0.15); }
+    .panel p { padding: 0.8rem 1rem; color: var(--text); font-size: 0.9rem; }
+
+    /* Social icons */
+    .socials { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; }
+    .socials img { height: 36px; filter: grayscale(70%); transition: all 0.2s; }
+    .socials img:hover { filter: none; transform: scale(1.15); }
+
+    footer { border-top: 1px solid var(--border); padding: 2rem 0; text-align: center; color: var(--muted); font-size: 0.8rem; }
+    .snake { max-width: 100%; margin-top: 1.5rem; opacity: 0.8; }
   </style>
 </head>
 
-<body class="bg-[#0d1117] text-gray-300 antialiased">
+<body>
+
   <!-- Navigation -->
-  <nav class="fixed w-full glass-effect z-50 border-b border-gray-800">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold gradient-text">RP</div>
-      <div class="space-x-6 text-sm">
-        <a href="#about" class="hover:text-white transition-colors">About</a>
-        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
-        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
-        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+  <nav>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;height:60px">
+      <div class="gradient-text" style="font-size:1.3rem;font-weight:700">$ whoami</div>
+      <div class="nav-links" style="display:flex;gap:1.5rem">
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#skills">skills</a>
+        <a href="#contact">contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center pt-16">
-    <div class="container mx-auto px-6 text-center">
-      <div class="mb-8">
-        <div class="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500 p-1 float">
-          <img src="/avatar.png" alt="Raghunath Panda" class="w-full h-full rounded-full object-cover bg-gray-800" />
-        </div>
-      </div>
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">
-        Hi, I'm <span class="gradient-text">Raghunath Panda</span>
-      </h1>
-      <p class="text-lg text-gray-400 mb-6 max-w-xl mx-auto">
-        CSE (AI/ML) student at KIIT building practical AI/ML applications and intelligent systems.
-      </p>
-      <div class="flex justify-center space-x-4">
-        <a href="mailto:raghunathrp28@gmail.com"
-          class="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:opacity-90 transition">
-          Get in Touch
-        </a>
-        <a href="https://github.com/raghunath485"
-          class="px-6 py-3 border border-gray-700 rounded-lg hover:bg-gray-800 transition">
-          View GitHub
-        </a>
-      </div>
+  <section class="hero container">
+    <div class="hero-avatar" style="background:radial-gradient(circle at 30% 30%,var(--cyan),var(--panel));">
+      R<span style="color:#ff69b4">P</span>
+    </div>
+
+    <h1 style="font-size:2.2rem;text-align:center;margin-bottom:0.3rem">
+      <span class="prompt">$ </span>Hi, I'm <span class="gradient-text">Raghunath Panda</span>
+    </h1>
+
+    <div class="typing-line">
+      <img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=20&duration=3000&pause=500&color=6A5ACD&center=true&vCenter=true&width=800&lines=%24+boot+raghunath.profile;Loading+Neural+Stack...;AI%2FML+Engineer+%7C+Python+%7C+ML;Open-Source+Contributor+%F0%9F%9A%80"
+        alt="typing" />
+    </div>
+
+    <p style="color:var(--muted);max-width:720px;margin:1.5rem auto">
+      CSE (AI/ML) student at KIIT building practical AI/ML applications and intelligent systems.
+      I turn ideas into real-world projects using Python, C++, SQL, ML, and cloud technologies (AWS).
+    </p>
+
+    <div style="display:flex;justify-content:center;gap:1rem;margin-top:1.5rem">
+      <a href="mailto:raghunathrp28@gmail.com"
+        class="terminal" style="padding:0.6rem 1.4rem;font-size:0.9rem">
+        <span class="prompt">$ </span> Contact me
+      </a>
+      <a href="https://github.com/raghunath485" target="_blank"
+        class="terminal" style="padding:0.6rem 1.4rem;font-size:0.9rem">
+        <span class="prompt">$ </span> View GitHub
+      </a>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-20 bg-[#161b22]">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12 gradient-text">About Me</h2>
-      <div class="max-w-4xl mx-auto text-center">
-        <p class="text-gray-300 mb-4">
-          I'm a Computer Science student specializing in Artificial Intelligence & Machine Learning at KIIT.
-        </p>
-        <p class="text-gray-300">
-          My passion lies in turning ideas into real-world projects using Python, C++, SQL, ML, and cloud technologies.
-        </p>
+  <section id="about" class="container">
+    <h2 class="section-title">🖥️ <span class="prompt">whoami</span></h2>
+    <div class="terminal" style="padding:1.5rem">
+      <pre style="font-size:0.9rem;line-height:1.6;color:var(--text)">
+<span class="prompt">></span> name        : Raghunath Panda
+<span class="prompt">></span> location    : India
+<span class="prompt">></span> education   : B.Tech CSE (AI/ML) @ KIIT
+<span class="prompt">></span> role        : AI/ML Engineer + Developer
+<span class="prompt">></span> mission     : Build intelligent, practical applications
+<span class="prompt">></span> fun_fact    : I build chatbots that understand emotions 💭</pre>
+    </div>
+  </section>
+
+  <!-- System Stats -->
+  <section class="container" style="margin-top:3rem">
+    <h2 class="section-title">⚡ <span class="prompt">system --stats</span></h2>
+    <div class="terminal" style="padding:1.5rem">
+      <table class="stats-table">
+        <tr><td>Metric</td><td>Value</td></tr>
+        <tr><td>🧠 AI/ML Projects</td><td><span style="color:#4ade80">3+</span></td></tr>
+        <tr><td>💻 Open Source</td><td><span style="color:#4ade80">Contributor</span></td></tr>
+        <tr><td>🏆 Hackathons</td><td><span style="color:#4ade80">3+</span></td></tr>
+        <tr><td>⭐ GitHub Stars</td><td><span style="color:#4ade80">15+</span></td></tr>
+        <tr><td>🎯 Focus</td><td><span style="color:#6A5ACD">Practical AI + Cloud</span></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- Tech Matrix -->
+  <section class="container" style="margin-top:3rem">
+    <h2 class="section-title">🧠 <span class="prompt">load --tech-matrix</span></h2>
+    <div class="terminal" style="padding:1.5rem">
+      <div class="tech-grid">
+        <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" />
+        <img src="https://skillicons.dev/icons?i=cpp" title="C++" />
+        <img src="https://skillicons.dev/icons?i=c" title="C" />
+        <img src="https://skillicons.dev/icons?i=java" title="Java" />
+        <img src="https://skillicons.dev/icons?i=sqlite" title="SQLite" />
+        <img src="https://skillicons.dev/icons?i=mysql" title="MySQL" />
+        <img src="https://skillicons.dev/icons?i=tensorflow" title="TensorFlow" />
+        <img src="https://skillicons.dev/icons?i=pytorch" title="PyTorch" />
+        <img src="https://skillicons.dev/icons?i=sklearn" title="Scikit-Learn" />
+        <img src="https://skillicons.dev/icons?i=pandas" title="Pandas" />
+        <img src="https://skillicons.dev/icons?i=flask" title="Flask" />
+        <img src="https://skillicons.dev/icons?i=streamlit" title="Streamlit" />
+        <img src="https://skillicons.dev/icons?i=aws" title="AWS" />
+        <img src="https://skillicons.dev/icons?i=docker" title="Docker" />
+        <img src="https://skillicons.dev/icons?i=git" title="Git" />
+        <img src="https://skillicons.dev/icons?i=github" title="GitHub" />
+        <img src="https://skillicons.dev/icons?i=linux" title="Linux" />
+        <img src="https://skillicons.dev/icons?i=jenkins" title="CI/CD" />
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-20">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-4 gradient-text">Featured Projects</h2>
+  <!-- Telemetry -->
+  <section class="container" style="margin-top:3rem">
+    <h2 class="section-title">📡 <span class="prompt">telemetry --live</span></h2>
+    <div class="terminal" style="padding:1.5rem;text-align:center">
+      <img height="140"
+        src="https://awesome-github-stats.azurewebsites.net/user-stats/raghunath485?theme=vision&card-bg=0d1117&title=6A5ACD&icon=6A5ACD&text=c9d1d9&line=30363d&border=30363d"
+        alt="Stats" />
+      <img height="140"
+        src="https://github-readme-streak-stats.herokuapp.com/?user=raghunath485&theme=vision&background=0d1117&ring=6A5ACD&fire=ff69b4&currStreakLabel=c9d1d9&sideNums=c9d1d9&sideLabels=6A5ACD&border=30363d"
+        alt="Streak" />
+    </div>
+    <div style="text-align:center;margin-top:1rem">
+      <img height="150"
+        src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=raghunath485&theme=vision&card-bg=0d1117&title=6A5ACD&text=c9d1d9&border=30363d"
+        alt="Languages" />
+    </div>
+  </section>
 
-      <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12">
-        <!-- Project 1 -->
-        <div class="glass-effect border border-gray-800 rounded-xl p-6">
-          <h3 class="text-xl font-bold mb-2">Mental Health Chatbot</h3>
-          <p class="text-gray-400 text-sm mb-4">
-            AI-powered conversational app with Python & Streamlit for mental wellness support.
-          </p>
-          <a href="https://github.com/raghunath485/Mental_Health_Chatbot"
-            class="text-purple-400 hover:text-white text-sm">
-            View Project &rarr;
-          </a>
-        </div>
-        <!-- Project 2 -->
-        <div class="glass-effect border border-gray-800 rounded-xl p-6">
-          <h3 class="text-xl font-bold mb-2">Nmap GUI</h3>
-          <p class="text-gray-400 text-sm mb-4">
-            Graphical interface for Nmap simplifying network scanning and port analysis.
-          </p>
-          <a href="https://github.com/raghunath485/nmap_gui_project"
-            class="text-purple-400 hover:text-white text-sm">
-            View Project &rarr;
-          </a>
-        </div>
-        <!-- Project 3 -->
-        <div class="glass-effect border border-gray-800 rounded-xl p-6">
-          <h3 class="text-xl font-bold mb-2">ML Pipeline Project</h3>
-          <p class="text-gray-400 text-sm mb-4">
-            End-to-end machine learning pipeline with scikit-learn and data visualization.
-          </p>
-          <span class="text-gray-500 text-sm">Coming soon...</span>
-        </div>
+  <!-- Achievements -->
+  <section class="container" style="margin-top:3rem">
+    <h2 class="section-title">🏆 <span class="prompt">vault --achievements</span></h2>
+    <div class="terminal" style="padding:1rem">
+      <img src="https://nirzak-trophies.vercel.app/?username=raghunath485&theme=darkhub&no-bg=true&no-frame=false&margin-w=8"
+        alt="Trophies" style="max-width:100%;height:auto" />
+    </div>
+  </section>
+
+  <!-- Interactive Panels -->
+  <section class="container" style="margin-top:3rem">
+    <h2 class="section-title">🛰️ <span class="prompt">panel --interactive</span></h2>
+    <div class="terminal" style="padding:1rem">
+      <details class="panel">
+        <summary>🧠 Current Build Mode</summary>
+        <p>
+          Building full-stack products with AI integrations, fast APIs, and production-friendly
+          architecture using Python, Streamlit, and Flask on AWS.
+        </p>
+      </details>
+
+      <details class="panel">
+        <summary>📦 Featured Projects</summary>
+        <p>
+          <strong>1. Mental Health Chatbot</strong> — AI-powered conversational app (Python + Streamlit)
+          with mood tracking &amp; sentiment-aware NLP.
+          <a href="https://github.com/raghunath485/Mental_Health_Chatbot" style="color:#6A5ACD">[github]</a>
+        </p>
+        <p>
+          <strong>2. Nmap GUI</strong> — Tkinter-based graphical interface simplifying Nmap scanning,
+          reporting, and port analysis.
+          <a href="https://github.com/raghunath485/nmap_gui_project" style="color:#6A5ACD">[github]</a>
+        </p>
+        <p>
+          <strong>3. ML Pipeline Project</strong> — End-to-end scikit-learn pipeline for preprocessing,
+          EDA, and model evaluation.
+        </p>
+      </details>
+
+      <details class="panel">
+        <summary>🤝 Open to Collaborate</summary>
+        <p>
+          Open to internships in AI/ML, hackathons, and collaborative projects in Python or
+          full-stack development. Reach out anytime!
+        </p>
+      </details>
+
+      <details class="panel">
+        <summary>📸 Side Quest</summary>
+        <p>
+          I enjoy building creative coding projects and exploring tools at the intersection of
+          AI and user experience.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container" style="margin-top:3rem">
+    <h2 class="section-title">🚀 <span class="prompt">projects --featured</span></h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Mental Health Chatbot</h3>
+        <div class="desc">AI-powered conversational app with Python &amp; Streamlit for mental wellness support, mood tracking &amp; personalized responses.</div>
+        <a href="https://github.com/raghunath485/Mental_Health_Chatbot">View Project →</a>
+      </div>
+      <div class="project">
+        <h3>Nmap GUI</h3>
+        <div class="desc">Tkinter-based graphical interface that simplifies network scanning, port analysis &amp; report generation.</div>
+        <a href="https://github.com/raghunath485/nmap_gui_project">View Project →</a>
+      </div>
+      <div class="project">
+        <h3>ML Pipeline Project</h3>
+        <div class="desc">End-to-end scikit-learn pipeline for data preprocessing, EDA, model development &amp; evaluation.</div>
+        <span style="color:var(--muted);font-size:0.8rem">Coming soon...</span>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-[#161b22]">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-4 gradient-text">Let's Connect</h2>
-      <p class="text-gray-400 mb-8">I'm open to collaboration and interesting projects.</p>
-      <div class="flex justify-center space-x-6">
-        <a href="mailto:raghunathrp28@gmail.com" aria-label="Email">
-          <i class="fas fa-envelope text-2xl hover:text-purple-400 transition"></i>
+  <section id="contact" class="container" style="margin-top:3rem;text-align:center">
+    <h2 class="section-title" style="text-align:center;display:block">🌐 <span class="prompt">connect --channels</span></h2>
+    <div class="terminal" style="padding:1.5rem">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/raghunath-panda-977716370" target="_blank" rel="noopener" title="LinkedIn">
+          <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" />
         </a>
-        <a href="https://www.linkedin.com/in/raghunath-panda-977716370" aria-label="LinkedIn" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin text-2xl hover:text-purple-400 transition"></i>
+        <a href="mailto:raghunathrp28@gmail.com" title="Email">
+          <img src="https://skillicons.dev/icons?i=gmail" alt="Email" />
         </a>
-        <a href="https://github.com/raghunath485" aria-label="GitHub" target="_blank" rel="noopener">
-          <i class="fab fa-github text-2xl hover:text-purple-400 transition"></i>
+        <a href="https://github.com/raghunath485" target="_blank" rel="noopener" title="GitHub">
+          <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
         </a>
       </div>
-      <p class="text-gray-500 text-sm mt-8">
-        raghunathrp28@gmail.com | India
+      <p style="color:var(--muted);margin-top:1rem">
+        <span class="prompt">$ </span> raghunathrp28@gmail.com | India
       </p>
+    </div>
+
+    <!-- Quote -->
+    <div style="margin-top:2rem">
+      <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Quote"
+        style="max-width:100%;border-radius:6px;border:1px solid var(--border)" />
     </div>
   </section>
 
+  <!-- Snake -->
+  <section class="container" style="text-align:center;margin-top:3rem">
+    <picture>
+      <source media="(prefers-color-scheme: dark)"
+        srcset="https://raw.githubusercontent.com/raghunath485/raghunath485/output/github-snake-dark.svg" />
+      <img class="snake" alt="github snake"
+        src="https://raw.githubusercontent.com/raghunath485/raghunath485/output/github-snake.svg" />
+    </picture>
+  </section>
+
   <!-- Footer -->
-  <footer class="py-8 border-t border-gray-800">
-    <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
-      &copy; 2025 Raghunath Panda. Built with ❤️
-    </div>
+  <footer>
+    <p>&copy; 2025 Raghunath Panda. <span style="color:#6600FF">$</span> Built with <span style="color:#ff69b4">❤</span>
+    </p>
+    <p style="margin-top:0.4rem">Thanks for visiting my terminal. Explore, fork, build, and star!</p>
   </footer>
+
 </body>
 
 </html>
