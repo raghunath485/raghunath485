@@ -46,11 +46,11 @@
 ## 📡 `stats --live`
 
 <div align="center">
-  <img height="170" src="https://awesome-github-stats.azurewebsites.net/user-stats/raghunath485?theme=vision&card-bg=0d1117&title=6A5ACD&icon=6A5ACD&text=c9d1d9&line=30363d&border=30363d&hide-border=true" />
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=raghunath485&theme=vision&background=0d1117&ring=6A5ACD&fire=ff69b4&currStreakLabel=c9d1d9&sideNums=c9d1d9&sideLabels=6A5ACD&border=30363d&hide-border=true" />
+  <img height="170" src="https://awesome-github-stats.azurewebsites.net/user-stats/raghunath485?theme=vision&card-bg=0d1117&title=825ad5&icon=825ad5&text=e6edf3&line=30363d&border=30363d&hide-border=true" />
+  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=raghunath485&theme=vision&background=0d1117&ring=825ad5&fire=fb60a9&currStreakLabel=e6edf3&sideNums=e6edf3&sideLabels=825ad5&border=30363d&hide-border=true" />
   <br/>
   <br/>
-  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=raghunath485&theme=vision&card-bg=0d1117&title=6A5ACD&text=c9d1d9&border=30363d" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=raghunath485&theme=vision&card-bg=0d1117&title=825ad5&text=e6edf3&border=30363d" />
 </div>
 
 ## 🏆 `achievements --list`
