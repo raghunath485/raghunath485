@@ -120,10 +120,10 @@
 </picture>
 
 <h3>Hits for <a href="https://github.com/raghunath485">raghunath485</a></h3>
-<img src="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/raghunath485/0d1117/raw/hits.json" />
+<img src="https://komarev.com/ghpvc/?username=raghunath485&style=flat&label=Profile+Views&color=6A5ACD&logoColor=white" alt="Visitor Counter" />
 <br/>
 <h3>Thanks for visiting my terminal. Explore, fork, build, and star!</h3>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:6A5ACD,50:ff69b4,100:0d1117" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:825ad5,50:fb60a9,100:0d1117" />
 
 </div>
