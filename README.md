@@ -24,7 +24,7 @@
 > fun_fact    : I build chatbots that understand emotions 💭
 ```
 
-## ⚡ `system --stats`
+## ⚡ `profile --stats`
 
 <div align="center">
 
@@ -37,13 +37,13 @@
 | Portfolio | **Live** |
 | Focus | **Practical AI + Cloud** |
 
-## 🧠 `load --tech-matrix`
+## 🧠 `import --tech-stack`
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,cpp,c,java,sql,mysql,sqlite,tensorflow,pytorch,sklearn,pandas,numpy,matplotlib,flask,streamlit,aws,docker,git,github,linux,vscode,jupyter" />
 </div>
 
-## 📡 `telemetry --live`
+## 📡 `stats --live`
 
 <div align="center">
   <img height="170" src="https://awesome-github-stats.azurewebsites.net/user-stats/raghunath485?theme=vision&card-bg=0d1117&title=6A5ACD&icon=6A5ACD&text=c9d1d9&line=30363d&border=30363d&hide-border=true" />
@@ -53,13 +53,13 @@
   <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=raghunath485&theme=vision&card-bg=0d1117&title=6A5ACD&text=c9d1d9&border=30363d" />
 </div>
 
-## 🏆 `vault --achievements`
+## 🏆 `achievements --list`
 
 <div align="center">
   <img src="https://nirzak-trophies.vercel.app/?username=raghunath485&theme=darkhub&no-bg=true&no-frame=false&margin-w=8" />
 </div>
 
-## 🛰️ `panel --interactive`
+## 🛰️ `details --interactive`
 
 <details>
   <summary><b>🧠 Current Build Mode</b></summary>
