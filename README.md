@@ -96,7 +96,7 @@ I'm also a contributor to open-source and enjoy sharing code that solves everyda
 
 ## 🌟 Featured Projects
 
-### 1. [Mental Health Chatbot](https://github.com/raghunath45/Mental_Health_Chatbot)
+### 1. [Mental Health Chatbot](https://github.com/raghunath485/Mental_Health_Chatbot)
 > AI-powered conversational application built with **Python and Streamlit** that provides interactive mental wellness support, **mood tracking**, **resources**, and **personalized responses**.
 
 - Built a retrieval-based + fine-tuned chatbot for empathetic conversations
