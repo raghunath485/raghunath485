@@ -13,7 +13,7 @@
 
 ---
 
-## 🖥️ `whoami`
+## 🖥️ `introduction`
 
 ```bash
 > name        : Raghunath Panda
