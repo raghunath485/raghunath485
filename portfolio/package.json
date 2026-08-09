@@ -1,0 +1,15 @@
+{
+    "name": "raghunath-panda-portfolio",
+    "version": "1.0.0",
+    "description": "Portfolio website for Raghunath Panda",
+    "scripts": {
+        "build": "echo 'Static site, no build step required' && mkdir -p dist && cp -r docs/* dist/ 2>/dev/null || echo 'Build ready'",
+        "dev": "npx serve docs -l 3000"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/raghunath485/raghunath485"
+    },
+    "license": "MIT",
+    "author": "Raghunath Panda"
+}

@@ -1,0 +1,7 @@
+# GitHub Pages Configuration
+# This file enables GitHub Pages to serve the portfolio site
+# from the /portfolio/docs folder on the gh-pages branch
+
+branch: gh-pages
+folder: /portfolio/docs
+scheme: https

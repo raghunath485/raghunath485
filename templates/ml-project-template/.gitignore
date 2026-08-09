@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+.tox/
+.coverage
+.pytest_cache/
+
+# Data & Models
+data/raw/
+data/processed/
+models/*.pkl
+notebooks/*.ipynb_checkpoints
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
