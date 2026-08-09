@@ -1,6 +1,6 @@
 <!-- Header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Hi%20I'm%20Raghunath!&fontSize=80&animation=fadeIn&fontAlignY=38&desc=Welcome%20to%20my%20GitHub%20Profile!&descAlignY=51&descAlign=62" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Hi%20I'm%20Raghunath!&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Welcome%20to%20my%20GitHub%20Profile!&descAlignY=65&descAlign=50" />
   
   <br/>
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=Student;Python+Developer;AI%2FML" alt="Typing SVG" />
