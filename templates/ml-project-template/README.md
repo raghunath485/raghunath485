@@ -25,3 +25,4 @@ ml-project-template/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```

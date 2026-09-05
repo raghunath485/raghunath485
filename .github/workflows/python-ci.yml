@@ -28,11 +28,11 @@ jobs:
             pip install -r requirements.txt
           fi
       - name: Run tests
-        run: |
-          pytest --cov=./
+        working-directory: templates/ml-project-template
+        run: pytest --cov=src
       - name: Upload coverage
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: coverage-report-${{ matrix.python-version }}
-          path: .coverage*
+          path: templates/ml-project-template/.coverage*

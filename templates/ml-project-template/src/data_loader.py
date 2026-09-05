@@ -1,7 +1,8 @@
 """Data loading utilities."""
 
-import pandas as pd
 from pathlib import Path
+
+import pandas as pd
 
 
 def load_data(filepath: str = None) -> pd.DataFrame:

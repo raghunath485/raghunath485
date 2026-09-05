@@ -1,8 +1,8 @@
 """Model training and evaluation utilities."""
 
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
+from sklearn.model_selection import train_test_split
 
 
 def train_model(data):

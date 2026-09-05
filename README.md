@@ -49,8 +49,8 @@
 <img src="https://cdn.simpleicons.org/python/8B949E" width="20" alt="Python">&nbsp;&nbsp;
 <img src="https://cdn.simpleicons.org/streamlit/8B949E" width="20" alt="Streamlit">
 <br><br>
-<a href="https://github.com/raghunath485"><img src="https://img.shields.io/badge/REPO-1B0338?style=flat-square&logo=github&logoColor=C084FC" alt="Repository"></a>&nbsp;
-<a href="https://github.com/raghunath485"><img src="https://img.shields.io/badge/LIVE-1B0338?style=flat-square&logo=streamlit&logoColor=C084FC" alt="Live Demo"></a>
+<a href="https://github.com/raghunath485/Mental-Wellness-Buddy"><img src="https://img.shields.io/badge/REPO-1B0338?style=flat-square&logo=github&logoColor=C084FC" alt="Repository"></a>&nbsp;
+<a href="https://mental-health-buddy-raghunath.streamlit.app/"><img src="https://img.shields.io/badge/LIVE-1B0338?style=flat-square&logo=streamlit&logoColor=C084FC" alt="Live Demo"></a>
 </td>
 <td width="50%" align="center" valign="top">
 <code>NM-02</code><br><br>
@@ -58,7 +58,7 @@
 <sub>NETWORK DISCOVERY TOOL</sub><br><br>
 <img src="https://cdn.simpleicons.org/python/8B949E" width="20" alt="Python">
 <br><br>
-<a href="https://github.com/raghunath485"><img src="https://img.shields.io/badge/REPO-1B0338?style=flat-square&logo=github&logoColor=C084FC" alt="Repository"></a>
+<a href="https://github.com/raghunath485/nmap_gui_project"><img src="https://img.shields.io/badge/REPO-1B0338?style=flat-square&logo=github&logoColor=C084FC" alt="Repository"></a>
 </td>
 </tr>
 </table>
@@ -153,9 +153,9 @@
 <div align="center">
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/raghunath485/raghunath485/output/pacman-dark.svg">
-<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/raghunath485/raghunath485/output/pacman-light.svg">
-<img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/raghunath485/raghunath485/output/pacman-light.svg" width="100%">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/raghunath485/raghunath485/pacman-output/pacman-dark.svg">
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/raghunath485/raghunath485/pacman-output/pacman-light.svg">
+<img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/raghunath485/raghunath485/pacman-output/pacman-light.svg" width="100%">
 </picture>
 
 <details>
