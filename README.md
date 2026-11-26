@@ -1,40 +1,55 @@
-<!-- Header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Hi%20I'm%20Raghunath!&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Welcome%20to%20my%20GitHub%20Profile!&descAlignY=65&descAlign=50" />
-  
-  <br/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=Student;Python+Developer;AI%2FML" alt="Typing SVG" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0b0a,50:2f6f4f,100:3ddc84&height=220&section=header&text=RAGHUNATH%20PANDA&fontSize=52&fontAlignY=38&desc=AI%2FML%20Engineering%20%C2%B7%20Intelligent%20Agents%20%C2%B7%20Practical%20Systems&descAlignY=62&descAlign=50&fontColor=d3f0dd" width="100%"/>
 </div>
 
-<!-- About Me -->
-## 👨‍💻 About Me
-- 🔭 I’m currently working on **Awesome Projects**
-- 🌱 I’m currently learning **Advanced System Design and Cloud Architectures**
-- 👯 I’m looking to collaborate on **Open Source Projects**
-- 🤔 I’m looking for help with **Mastering Data Structures and Algorithms**
-- 💬 Ask me about **React, Python, Node.js, and more!**
-- 📫 How to reach me: **[Your LinkedIn/Email here]**
-- ⚡ Fun fact: **I love turning caffeine into code!**
+<p align="center">
+  <a href="https://raghunath485.github.io/portfolio/"><img src="https://img.shields.io/badge/Live_Portfolio-Interactive_Neovim_UI-3ddc84?style=for-the-badge&logo=neovim&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/raghunathpanda"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" /></a>
+  <a href="mailto:raghunathrp28@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
 
-<!-- Tech Stack -->
-## 🛠️ My Tech Stack
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,c,cpp" />
-  </a>
-</div>
+---
 
-<!-- GitHub Stats -->
-## 📊 GitHub Stats
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=raghunath485&show_icons=true&theme=dark&hide_border=true&title_color=36BCF7" height="192" alt="raghunath485's github stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=raghunath485&theme=dark&hide_border=true" height="192" alt="raghunath485's streak"/>
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raghunath485&layout=compact&theme=dark&hide_border=true&title_color=36BCF7" height="192" alt="raghunath485's top languages"/>
-</div>
+### ⚡ `$ whoami`
 
-<!-- Footer -->
-<br/>
+> Computer Science and Artificial Intelligence undergraduate at **KIIT University** focused on building practical AI and intelligent agent applications. Experienced in machine learning workflows, data analytics, and competitive programming in C++ and Python. Always looking to solve real-world problems through clean code and applied AI.
+
+- 🔭 **Current Focus:** Building agentic data science workflows & LLM-integrated systems.
+- 🎓 **Education:** B.Tech in CSE (AI & Machine Learning), KIIT (2024 – 2028).
+- 💼 **Experience:** Internships at **Infosys Springboard** & **AICTE–IBM SkillsBuild**.
+- 💬 **Ask me about:** Python, Scikit-learn, Streamlit, Agentic AI, DSA in C++.
+
+---
+
+### 🛠️ `$ cat stack.json`
+
+```ini
+[Languages]
+Python · C++ · C · SQL · Java
+
+[Machine Learning & AI]
+Scikit-learn · Pandas · NumPy · Plotly · Agentic AI · LLM APIs (Gemini, OpenAI)
+
+[Web & Frameworks]
+Streamlit · Flask · HTML5 · CSS3
+
+[Databases & Cloud]
+MySQL · SQLite · AWS (RDS) · Git · Linux
+```
+
+---
+
+### 🚀 `$ git log --projects`
+
+- **[Agentic AI Data Scientist](https://github.com/raghunath485/Agentic-AI-Data-Scientist)** — Autonomous agent that investigates tabular datasets end-to-end (0–100 Data Health Score, leak-free preprocessing, 5-fold cross-validation benchmarking across Random Forest/HistGradientBoosting, and Streamlit studio).
+- **[Mental Wellness Buddy](https://github.com/raghunath485/Mental-Wellness-Buddy)** — AI-powered mental wellness assistant with mood journaling, NLP chatbot, affirmations, and guided breathing.
+- **[Nmap GUI Network Scanner](https://github.com/raghunath485/Nmap-GUI-Scanner)** — Desktop GUI automating network discovery, host detection, and port scanning.
+
+---
+
+### 📊 GitHub Activity
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=100&section=footer" />
+  <img src="https://github-readme-stats.vercel.app/api?username=raghunath485&show_icons=true&theme=tokyonight&hide_border=true&title_color=3ddc84" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raghunath485&layout=compact&theme=tokyonight&hide_border=true&title_color=3ddc84" height="165" />
 </div>
