@@ -8,6 +8,15 @@
   <a href="mailto:raghunathrp28@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
+<p align="center">
+  <a href="https://raghunath485.github.io/portfolio/">
+    <img src="https://raw.githubusercontent.com/raghunath485/portfolio/main/assets/preview-1.png" width="48%" alt="Live Interactive Code Wall Preview" />
+    <img src="https://raw.githubusercontent.com/raghunath485/portfolio/main/assets/preview-2.png" width="48%" alt="Interactive Neovim Editor Preview" />
+  </a>
+  <br/>
+  <em>⚡ <a href="https://raghunath485.github.io/portfolio/">Click here to launch the live interactive terminal & code-wall portfolio in your browser!</a> ⚡</em>
+</p>
+
 ---
 
 ### ⚡ `$ whoami`
